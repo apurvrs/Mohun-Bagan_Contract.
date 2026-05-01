@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Status</title>
+  <style>
+    body {
+      background: #021b02;
+      color: white;
+      font-family: Arial;
+      padding: 30px;
+    }
+
+    .box {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255,255,255,0.08);
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    button {
+      background: #00ff88;
+      border: none;
+      padding: 15px;
+      width: 100%;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .warning {
+      background: rgba(255,0,0,0.2);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Regulatory & Medical Status</h1>
+
+    <label>AIFF CRS ID</label>
+    <input type="text" value="P0000209351">
+
+    <label>Current Fitness Status</label>
+    <input type="text" value="FIT">
+
+    <label>Medical Clearance & Injury History</label>
+    <textarea rows="6">Player is medically fit and fully cleared for professional football activities. Known for elite stamina, tactical intelligence, and consistent interstate-level performances. No active rehabilitation currently ongoing.</textarea>
+
+    <div class="warning">
+      <h2>Mandatory Deadline</h2>
+      <p>
+        All requested data must be submitted within 5 business days.
+        Failure to comply may result in exclusion from the official squad list.
+      </p>
+    </div>
+
+    <button>Submit Registration</button>
+  </div>
+</body>
+</html>
