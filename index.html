@@ -5,6 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohun Bagan U-17 Registration</title>
   <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 10px #00ff88; }
+      50% { box-shadow: 0 0 25px #00ff88; }
+      100% { box-shadow: 0 0 10px #00ff88; }
+    }
+
+    .container, .box {
+      animation: fadeUp 1.2s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      transition: 0.4s;
+    }
+
+    button, a {
+      animation: glow 3s infinite;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -57,12 +90,14 @@
   <div class="container">
     <img src="mohunbagan_logo.png" alt="Mohun Bagan Logo" style="width:180px; border-radius:50%; margin-bottom:20px; box-shadow:0 0 25px #00ff88;">
     <h1>Mohun Bagan Super Giant U-17</h1>
-    <h2> <b> Abhinav Srivastava </b> Biography</h2>
+    <h2>Cinematic Football Biography</h2>
     <p>
-      The story of Abhinav Srivastava — a teenage Indian midfielder whose journey from Bihar to Mohun Bagan Super Giant was built through sacrifice, discipline, and passion for football.
+      The official cinematic football story of Abhinav Srivastava — a fearless Indian midfielder whose journey from Bihar to Mohun Bagan Super Giant was built through sacrifice, discipline, and passion for football.
     </p>
 
     <div class="buttons">
+      <a href="contract1.html">Contract 1</a>
+      <a href="contract2.html">Contract 2</a>
       <a href="page1.html">Biography</a>
       <a href="page2.html">Football Profile</a>
       <a href="page3.html">Career Journey</a>
