@@ -4,60 +4,71 @@
   <title>Legacy</title>
   <style>
     body {
-      background: #021b02;
-      color: white;
-      font-family: Arial;
-      padding: 30px;
+      margin:0;
+      background:black;
+      color:white;
+      font-family:Arial;
+      padding:30px;
     }
 
-    .box {
-      max-width: 900px;
-      margin: auto;
-      background: rgba(255,255,255,0.08);
-      padding: 30px;
-      border-radius: 15px;
+    .logo {
+      position:fixed;
+      top:20px;
+      right:20px;
+      width:90px;
+      border-radius:50%;
+      animation:float 3s infinite ease-in-out;
+      box-shadow:0 0 25px #00ff88;
     }
 
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      border: none;
+    @keyframes float {
+      0% {transform:translateY(0);} 
+      50% {transform:translateY(-12px);} 
+      100% {transform:translateY(0);} 
     }
 
-    button {
-      background: #00ff88;
-      border: none;
-      padding: 15px;
-      width: 100%;
-      border-radius: 10px;
-      font-weight: bold;
+    .hero {
+      max-width:1000px;
+      margin:auto;
+      text-align:center;
+      padding-top:80px;
     }
 
-  
+    h1 {
+      font-size:65px;
+      color:#00ff88;
+    }
+
+    .vision {
+      margin-top:40px;
+      background:rgba(255,255,255,0.08);
+      padding:35px;
+      border-radius:25px;
+      line-height:1.8;
+      box-shadow:0 0 25px rgba(0,255,136,0.2);
+    }
   </style>
 </head>
 <body>
-  <div style="position:fixed; top:20px; right:20px; z-index:1000;">
-    <img src="mohunbagan_logo.png" alt="Mohun Bagan Logo" style="width:90px; height:90px; border-radius:50%; animation: logoFloat 3s ease-in-out infinite, logoGlow 2.5s infinite; box-shadow:0 0 25px #00ff88;">
-  </div>
-  <div class="box">
-    <h1>Regulatory & Legacy</h1>
+  <img src="mohunbagan_logo.png" class="logo">
 
-    <label>AIFF CRS ID</label>
-    <input type="text" value="P0000209351">
+  <div class="hero">
+    <h1>The Legacy</h1>
 
-    <label>Current Fitness Status</label>
-    <input type="text" value="FIT">
+    <div class="vision">
+      <h2>Professional Vision</h2>
+      <p>
+        Abhinav Srivastava dreams of becoming one of India's finest midfielders through relentless hard work, leadership, and football intelligence. His dedication to the game continues to shape a journey built on passion, discipline, and ambition.
+      </p>
 
-    <label>Medical Clearance & Injury History</label>
-    <textarea rows="6">Player is medically fit and fully cleared for professional football activities. Known for elite stamina, tactical intelligence, and consistent interstate-level performances. No active rehabilitation currently ongoing.</textarea>
+      <h2>Medical Status</h2>
+      <p>
+        Fully fit and medically cleared for professional football activities.
+      </p>
 
-    
-
-    
+      <h2>AIFF CRS ID</h2>
+      <p>P0000209351</p>
+    </div>
   </div>
 </body>
 </html>
