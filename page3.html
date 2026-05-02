@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Performance Statistics</title>
+  <title>Career Journey</title>
   <style>
     body {
-      background: #021b02;
-      color: white;
-      font-family: Arial;
-      padding: 30px;
+      margin:0;
+      background:linear-gradient(to bottom,#000,#032103);
+      color:white;
+      font-family:Arial;
+      padding:30px;
     }
 
-    .box {
-      max-width: 900px;
-      margin: auto;
-      background: rgba(255,255,255,0.08);
-      padding: 30px;
-      border-radius: 15px;
+    .logo {
+      position:fixed;
+      top:20px;
+      right:20px;
+      width:90px;
+      border-radius:50%;
+      box-shadow:0 0 25px #00ff88;
+      animation:pulse 2s infinite;
     }
 
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      border: none;
+    @keyframes pulse {
+      0% {transform:scale(1);} 
+      50% {transform:scale(1.1);} 
+      100% {transform:scale(1);} 
     }
 
-    button {
-      background: #00ff88;
-      border: none;
-      padding: 15px;
-      width: 100%;
-      border-radius: 10px;
-      font-weight: bold;
+    h1 {
+      text-align:center;
+      font-size:55px;
+      color:#00ff88;
+    }
+
+    .timeline {
+      max-width:900px;
+      margin:auto;
+    }
+
+    .item {
+      background:rgba(255,255,255,0.08);
+      padding:25px;
+      border-left:5px solid #00ff88;
+      margin:25px 0;
+      border-radius:15px;
     }
   </style>
 </head>
 <body>
-  <div style="position:fixed; top:20px; right:20px; z-index:1000;">
-    <img src="mohunbagan_logo.png" alt="Mohun Bagan Logo" style="width:90px; height:90px; border-radius:50%; animation: logoFloat 3s ease-in-out infinite, logoGlow 2.5s infinite; box-shadow:0 0 25px #00ff88;">
-  </div>
-  <div class="box">
-    <h1>Performance & Career Statistics</h1>
+  <img src="mohunbagan_logo.png" class="logo">
 
-    <label>Club & Academy History</label>
-    <textarea rows="5">Patli Football Club (2020)
-Nalanda Football Club (2021-2022)
-Kumhrar Football Club (2022-2023)
-The Red Tiger Football Club (2024-2025)
-Fully Trained At: Nalanda Football Club (2022)</textarea>
+  <h1>Career Journey</h1>
 
-    <label>Total Appearances</label>
-    <input type="text" value="329">
+  <div class="timeline">
+    <div class="item">
+      <h2>Patli Football Club</h2>
+      <p>2020</p>
+    </div>
 
-    <label>Goals & Assists</label>
-    <input type="text" value="127 Goals / 289 Assists">
+    <div class="item">
+      <h2>Nalanda Football Club</h2>
+      <p>2021-2022</p>
+    </div>
 
-    <label>Minutes Played</label>
-    <input type="text" value="26000+">
+    <div class="item">
+      <h2>Kumhrar Football Club</h2>
+      <p>2022-2023</p>
+    </div>
 
-    <label>Disciplinary Record</label>
-    <textarea rows="5">Total Yellow Cards: 20
-Total Red Cards: 7</textarea>
+    <div class="item">
+      <h2>The Red Tiger Football Club</h2>
+      <p>2024-2025</p>
+    </div>
 
-    
+    <div class="item">
+      <h2>Career Stats</h2>
+      <p>
+        329 Appearances<br>
+        127 Goals<br>
+        289 Assists<br>
+        26000+ Minutes Played
+      </p>
+    </div>
   </div>
 </body>
 </html>
